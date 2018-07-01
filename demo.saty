@@ -1,12 +1,10 @@
 @require: stdja
 @import: textcolor
+%@import: color
 
-%let-inline ctx \textcolor color inner = 
-%  let ctx-textcolor= 
-%    ctx |> set-text-color color
+%let-inline ctx \textcolor color inner =  
 %  read-inline (ctx |> set-text-color color) inner
 %in
-%   read-inline ctx-textcolor inner
 
 document (|
   title = {textcolor-demo};
@@ -16,6 +14,6 @@ document (|
 |) '<
   +p{
     %\textcolor(Color.orange){テスト}
-    \textcolor(Color.orange){テスト}
+    \textcolor(TextColor.blue){テスト}
   }
 >
