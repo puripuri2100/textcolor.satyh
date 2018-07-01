@@ -1,0 +1,21 @@
+@require: stdja
+@import: textcolor
+
+%let-inline ctx \textcolor color inner = 
+%  let ctx-textcolor= 
+%    ctx |> set-text-color color
+%  read-inline (ctx |> set-text-color color) inner
+%in
+%   read-inline ctx-textcolor inner
+
+document (|
+  title = {textcolor-demo};
+  author = {puripuri2100};
+  show-title = true;
+  show-toc = false;
+|) '<
+  +p{
+    %\textcolor(Color.orange){テスト}
+    \textcolor(Color.orange){テスト}
+  }
+>

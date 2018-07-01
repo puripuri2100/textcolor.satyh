@@ -1,0 +1,7 @@
+@require: color
+
+let-inline ctx \textcolor color word =
+  let ctx-textcolor =
+    ctx |> set-text-color (color)
+  in
+    read-inline ctx-textcolor word
