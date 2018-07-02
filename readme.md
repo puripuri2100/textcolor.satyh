@@ -49,3 +49,6 @@ CMYKの値は[色見本と配色サイト](https://www.color-sample.com/)の該�
 - cmyk-violet cmyk = 0.679 0.786 0.103	0.
 - cmyk-purple cmyk = 0.448 0.753 0. 0.
 - cmyk-brown cmyk = 0.586 0.698 0.845 0.252
+- cmyk-olive cmyk = 0.667 0.616 1. 0.261
+- cmyk-orange cmyk = 0.069 0.614 0.929 0.
+- cmyk-teal cmyk = 0.843 0.402 0.527 0.001
