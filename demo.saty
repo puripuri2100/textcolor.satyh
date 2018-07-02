@@ -8,7 +8,8 @@ document (|
   show-toc = false;
 |) '<
   +p{
-    \textcolor(Color.orange){テスト}
-    \textcolor(TextColor.cmyk-blue){テスト}
+    \textcolor(TextColor.blue){テスト}
+    \textcolor(TextColor.cmyk-blue){テスト
+    \textcolor(TextColor.lightgray){テスト}}
   }
 >

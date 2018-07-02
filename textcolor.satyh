@@ -7,13 +7,23 @@ module TextColor : sig
   val cmyk : float -> float -> float -> float -> color
   val black : color
   val white : color
+  val darkgray : color
+  val lightgray : color
+
   val red : color
   val yellow : color
   val orange : color
   val blue : color
   val green : color
+
+  val cmyk-cyan : color
+  val cmyk-magenta : color
+  val cmyk-yellow : color
   val cmyk-blue : color
   val cmyk-red : color
+  val cmyk-green : color
+  val cmyk-lime : color
+  val cmyk-pink : color
   direct \textcolor : [color; inline-text] inline-cmd
 
 end = struct
@@ -23,13 +33,23 @@ end = struct
 
   let black = gray 0.
   let white = gray 1.
+  let darkgray = gray 0.35
+  let lightgray = gray 0.65
+
   let red = rgb 1. 0. 0.
   let yellow = rgb 1. 1. 0.
   let orange = rgb 1. 0.5 0.
   let blue = rgb 0. 0. 1.
   let green = rgb 0. 1. 0.
+
+  let cmyk-cyan = cmyk 1. 0. 0. 0.
+  let cmyk-magenta = cmyk 0. 1. 0. 0.
+  let cmyk-yellow = cmyk 0. 0. 1. 0.
   let cmyk-blue = cmyk 1. 1. 0. 0.
   let cmyk-red = cmyk 0. 1. 1. 0.
+  let cmyk-green = cmyk 1. 0. 1. 0.
+  let cmyk-lime = cmyk 0.614 0. 1. 0.
+  let cmyk-pink = cmyk 0. 0.359 0.104 0.
 
 
 let-inline ctx \textcolor color word =
