@@ -24,6 +24,10 @@ module TextColor : sig
   val cmyk-green : color
   val cmyk-lime : color
   val cmyk-pink : color
+  val cmyk-violet : color
+  val cmyk-purple : color
+  val cmyk-brown : color
+
   direct \textcolor : [color; inline-text] inline-cmd
 
 end = struct
@@ -50,6 +54,9 @@ end = struct
   let cmyk-green = cmyk 1. 0. 1. 0.
   let cmyk-lime = cmyk 0.614 0. 1. 0.
   let cmyk-pink = cmyk 0. 0.359 0.104 0.
+  let cmyk-violet = cmyk 0.679 0.786 0.103	0.
+  let cmyk-purple = cmyk 0.448 0.753 0. 0.
+  let cmyk-brown = cmyk 0.586 0.698 0.845 0.252
 
 
 let-inline ctx \textcolor color word =
