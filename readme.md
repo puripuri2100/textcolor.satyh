@@ -28,3 +28,6 @@ SATySFiが標準で提供する[colorパッケージ](https://github.com/gfngfn/
 - yellow （標準）rgb = 1. 1. 0.
 - orange （標準）rgb = 1. 0.5 0.
 - blue （標準）rgb = 0. 0. 1.
+- green rgb = 0. 1. 0.
+- cmyk-blue cmyk = 1. 1. 0. 0.
+- cmyk-red cmyk = 0. 1. 1. 0.
