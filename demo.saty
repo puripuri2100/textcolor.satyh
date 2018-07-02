@@ -9,6 +9,6 @@ document (|
 |) '<
   +p{
     \textcolor(Color.orange){テスト}
-    \textcolor(TextColor.blue){テスト}
+    \textcolor(TextColor.cmyk-blue){テスト}
   }
 >
