@@ -2,13 +2,14 @@
 
 module TextColor : sig
 
-  val gray : float -> color
   val rgb : float -> float -> float -> color
   val cmyk : float -> float -> float -> float -> color
+
   val black : color
   val white : color
   val darkgray : color
   val lightgray : color
+  val gray : color
 
   val red : color
   val yellow : color
@@ -34,14 +35,15 @@ module TextColor : sig
   direct \textcolor : [color; inline-text] inline-cmd
 
 end = struct
-  let gray x = Gray(x)
+
   let rgb r g b = RGB(r, g, b)
   let cmyk c m y k = CMYK(c, m, y, k)
 
-  let black = gray 0.
-  let white = gray 1.
-  let darkgray = gray 0.35
-  let lightgray = gray 0.65
+  let black = Gray(0.)
+  let white = Gray(1.)
+  let darkgray = Gray(0.25)
+  let lightgray = Gray(0.75)
+  let gray = Gray(0.5)
 
   let red = rgb 1. 0. 0.
   let yellow = rgb 1. 1. 0.

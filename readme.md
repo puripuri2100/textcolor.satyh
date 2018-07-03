@@ -15,26 +15,26 @@ SATySFiが標準で提供する[colorパッケージ](https://github.com/gfngfn/
 # 追加する色の定義の仕方
 色の定義のしかたです
 
-- gray colorパッケージにももとからあるものですが、blackを0、whiteを1として、値xを`Gray(x)`のように入れます。
+- Gray whiteを1、blackを0として、Gray(x)という風に数字を入れる。
 - rgb colorパッケージにももとからあるものですが、`RGB(r,g,b)`のように入れます。　最大が1で最小が0です。
 - cmyk CMYK(c, m, y, k)のように入れます
 
 CMYKの値は[色見本と配色サイト](https://www.color-sample.com/)の該当色の「CMYK (Japan 標準紙)」というところの値を利用しました。
 
 # 追加する色とその定義
-追加する色と、その定義を書いておきます。colorパッケージに元からあった色とその定義に関しては「（標準）」と書いておきます。
+追加する色と、その定義を書いておきます。
 
 ## Gray
-- black （標準）gray = 0.
-- white （標準）gray = 1.
-- darkgray gray = 0.35
-- lightgray gray = 0.65
+- black Gray(0.)
+- white Gray(1.)
+- darkgray Gray(0.25)
+- lightgray Gray(0.75)
 
 ## RGB
-- red （標準）rgb = 1. 0. 0.
-- yellow （標準）rgb = 1. 1. 0.
-- orange （標準）rgb = 1. 0.5 0.
-- blue （標準）rgb = 0. 0. 1.
+- red rgb = 1. 0. 0.
+- yellow rgb = 1. 1. 0.
+- orange rgb = 1. 0.5 0.
+- blue rgb = 0. 0. 1.
 - green rgb = 0. 1. 0.
 
 ## CMYK
