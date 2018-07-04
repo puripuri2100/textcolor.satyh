@@ -54,4 +54,4 @@ CMYKの値は[色見本と配色サイト](https://www.color-sample.com/)の該�
 - cmyk-teal cmyk = 0.843 0.402 0.527 0.001
 
 # LICENSE
-(C) T. Suwa
+(C) Naoki Kaneko and T. Suwa 2018
