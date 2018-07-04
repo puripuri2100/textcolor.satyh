@@ -52,3 +52,6 @@ CMYKの値は[色見本と配色サイト](https://www.color-sample.com/)の該�
 - cmyk-olive cmyk = 0.667 0.616 1. 0.261
 - cmyk-orange cmyk = 0.069 0.614 0.929 0.
 - cmyk-teal cmyk = 0.843 0.402 0.527 0.001
+
+# LICENSE
+(C) T. Suwa
