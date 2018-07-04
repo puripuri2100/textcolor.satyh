@@ -67,10 +67,10 @@ end = struct
   let cmyk-teal = cmyk 0.843 0.402 0.527 0.001
 
 
-let-inline ctx \textcolor color word =
+let-inline ctx \textcolor color inner =
   let ctx-textcolor =
     ctx |> set-text-color (color)
   in
-    read-inline ctx-textcolor word
+    read-inline ctx-textcolor inner
 
 end
