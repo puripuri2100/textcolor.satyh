@@ -1,4 +1,6 @@
-@require: color
+%(C) Naoki Kaneko and T. Suwa 2018
+%LGPL-3.0
+
 
 module TextColor : sig
 
